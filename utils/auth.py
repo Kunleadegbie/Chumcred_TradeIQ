@@ -19,10 +19,9 @@ SUPER_ADMIN_PASSWORD = "admin123"
 SMTP_ENABLED = True
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
-SMTP_USERNAME = "chumcred@gmail.com"
-SMTP_PASSWORD = "sujg suie aqks vtsi"
-FROM_EMAIL = "chumcred@gmail.com"
-
+SMTP_USERNAME = os.getenv("SMTP_USERNAME")
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD")
+FROM_EMAIL = os.getenv("FROM_EMAIL")
 
 # -----------------------------------
 # DB INIT
